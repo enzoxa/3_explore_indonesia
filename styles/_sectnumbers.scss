@@ -1,0 +1,93 @@
+.sectnumbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("../images/sectnum_background.jpg");
+    background-position: center;
+
+    &__title {
+        margin-top: 190px;
+        margin-bottom: 45px;
+
+        color: var(--color-dark-blue);
+        font-weight: var(--font-weight-base);
+        line-height: 75px;
+        font-size: 50px;
+    }
+
+    &--container {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-bottom: 28px;
+
+        &__image {
+            width: 405px;
+            height: 258px;
+            border-radius: 10px;
+        }
+
+        &__arrow {
+            margin: 34px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 886px;
+        height: 794px;
+        width: 100%;
+        gap: 39px;
+        
+
+        background: #020C21;
+        opacity: 0.9;
+        text-align: center;
+
+        &--container_up {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 484px;
+            gap: 36px;            
+
+            &.title {
+                margin-top: 200px;
+                
+                color: var(--color-white);
+                font-size: var(--font-title-md);
+                font-weight: var(--font-weight-base);
+                line-height: 90px;
+            }
+
+
+        }
+
+        &--container_down {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            margin: 0px 322px 224px 322px;
+
+            .title {
+                color: var(--color-red);
+                font-size: var(--font-title-xs);
+                font-weight: var(--font-weight-base);
+                line-height: 49.16px;
+                letter-spacing: 0.39px;
+            }
+        }
+    }
+
+    .text {
+        color: var(--color-white-secondary);
+        font-size: var(--font-size-base);
+        font-weight: var(--font-weight-base);
+        line-height: 28px;
+        letter-spacing: 0.50px;
+    }
+}

@@ -1,0 +1,114 @@
+.gethere {
+    background-color: var(--color-light-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px;
+
+    &--title {
+        color: var(--color-dark-blue);
+        font-size: var(--font-title-md);
+        margin-bottom: 44px;
+        display: flex;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;        
+        max-width: 1162px;
+        gap: 94px;
+
+        &--step {
+            position: relative;
+            display: flex;
+            flex-direction: row;        
+
+            &__text_container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .title {
+                color: var(--color-dark-blue);
+                font-size: 26px;
+                font-weight: var(--font-weight-base);
+                line-height: 41px;
+            }
+
+            .text {
+                color: rgba(21.06, 20.34, 56.79, 0.40);
+                font-size: 23.47px;
+                font-weight: 400;
+                line-height: 38px;
+                margin-top: 28px;
+            }
+            &.substep {
+                margin-top: 94px;
+            }
+        }
+
+        &--substep {
+            display: flex;            
+            flex-direction: row;
+            max-width: 446px;
+            
+            
+            &.vid {
+                position: relative;
+                margin-right: 46px;                
+            }
+
+            &.text_container {
+                display: flex;
+                flex-direction: column;                
+            }
+
+            &.image {
+                width: 250px;
+                height: 166px;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+
+            &.arrow {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            &.text {
+                margin-top: 12px;
+            }
+        }
+
+        &__number {
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50px;
+            background-color: var(--color-red);
+            text-align: center;
+            justify-content: center;
+            color: var(--color-white);
+            margin-right: 44px;
+        }
+
+        &.line {
+            position: absolute;
+            width: 3px;
+            height: 816px;
+            background: rgba(21.06, 20.34, 56.79, 0.40);            
+            margin: 60px 28px;
+        }
+    }
+
+    .button {
+        width: 210px;
+        margin-top: 16px;
+    }
+}

@@ -1,0 +1,32 @@
+.header {
+    &__inner {
+        display: flex;
+        margin: 30px 10px 160px 20px;        
+        align-items: center;
+        justify-content: space-between;        
+        gap: 100px;
+
+        color: var(--color-white);
+        &--list {
+            list-style-type: none;            
+            display: inline-flex;
+            gap: 50px;
+            margin-left: 78px;
+        }
+
+        &--left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;            
+        }
+
+        &--right {
+            display: flex;
+            justify-content: space-around;
+            margin-right: 40px;
+            &.buttons {
+                gap: 30px;
+            }            
+        }
+    }
+}

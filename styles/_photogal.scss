@@ -1,0 +1,73 @@
+.photogal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    &--title {
+        margin-top: 178px;
+
+        color: var(--color-dark-blue);
+        font-size: var(--font-title-md);
+        font-weight: --font-weight-base;
+        line-height: 90px;
+    }
+
+    &--text {
+        max-width: 512px;
+        text-align: center;
+        margin: 42px auto auto auto;
+
+        color: var(--color-gray);
+        font-size: var(--font-size-base);
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.18px;
+    }
+
+    &--grid {
+        display: grid;
+        margin-top: 70px;
+        margin-bottom: 230px;
+
+        gap: 30px;
+        grid-template-columns: 370px 370px 370px;
+        grid-template-rows: 210px 160px 160px 210px;
+        grid-template-areas:
+            "c1 c3 c5"
+            "c1 c4 c5"
+            "c1 c4 c6"
+            "c2 c4 c6";
+            
+        .image {
+            border-radius: 10px;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .c1 {
+            grid-area: c1;
+        }
+
+        .c2 {
+            grid-area: c2;
+        }
+
+        .c3 {
+            grid-area: c3;
+        }
+
+        .c4 {
+            grid-area: c4;
+        }
+
+        .c5 {
+            grid-area: c5;
+        }
+
+        .c6 {
+            grid-area: c6;
+        }
+    }
+}

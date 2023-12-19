@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    background: var(--color-dark-blue);
+    height: 136px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+    &__logo {
+        padding-left: -20px;
+    }
+
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        gap: 36px;
+        color: var(--color-white);
+        margin-right: 300px;    
+    }
+
+    .copyring{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
